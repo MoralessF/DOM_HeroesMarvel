@@ -53,14 +53,14 @@ avengers.forEach((heroe)=>
         if(heroe.vuela)
         {
             const botonVuela=document.createElement('button');
-            botonVuela.classList.add('btn','btn-sm','btn-outline-secondary');
+            botonVuela.classList.add('btn','btn-sm','btn-outline-secondary','m-1');
             botonVuela.innerText="Vuela"
             seccionBotones.append(botonVuela);
         }
         if(heroe.humano)
         {
             const botonHumano=document.createElement('button');
-            botonHumano.classList.add('btn','btn-sm','btn-outline-secondary');
+            botonHumano.classList.add('btn','btn-sm','btn-outline-secondary','m-1');
             botonHumano.innerText="Humano"
             seccionBotones.append(botonHumano);
         }
@@ -69,6 +69,13 @@ avengers.forEach((heroe)=>
             const astronauta=document.createElement('small');
             astronauta.classList.add('text-muted');
             astronauta.innerText="Astronauta"
+            seccionInferior.append(astronauta);
+        }
+        else
+        {
+            const astronauta=document.createElement('small');
+            astronauta.classList.add('text-muted');
+            astronauta.innerText="No astronauta"
             seccionInferior.append(astronauta);
         }
 
